@@ -1,36 +1,92 @@
-# Conversational Knowledge Bot
-
-## Overview
+Overview
+--------
 This project implements a Conversational Knowledge Bot using LangChain.
 
-Features:
-- Conversational memory
-- Wikipedia tool integration
-- Streamlit chat interface
-- Context-aware follow-up responses
+The bot is capable of:
+- Maintaining conversational memory
+- Fetching real-time factual data using the Wikipedia tool
+- Providing context-aware follow-up responses
+- Running through an interactive Streamlit chat interface
 
-## Architecture
+Features
+--------
+- Conversational Memory using ConversationBufferMemory
+- Wikipedia Tool Integration for factual information retrieval
+- Context-aware follow-up handling
+- Streamlit-based Chat UI
+- Live Deployment on Streamlit Cloud
 
-User → Streamlit UI → LangChain Agent  
-Agent → Memory + Wikipedia Tool  
+Architecture
+------------
+User  
+  ↓  
+Streamlit Chat UI  
+  ↓  
+LangChain Agent (AgentExecutor)  
+  ↓  
+ConversationBufferMemory  
+  ↓  
+Wikipedia Tool  
+  ↓  
+LLM (OpenAI)  
+  ↓  
+Final Response to User
 
-## Installation
+Memory Used
+-----------
+- ConversationBufferMemory (LangChain)
+- Maintains previous conversation context
+- Enables follow-up questions like:
 
-1. Create virtual environment:
-   python -m venv venv
-   venv\Scripts\activate
+User: Who is Elon Musk?
+User: When was he born?
 
-2. Install dependencies:
-   pip install -r requirements.txt
+Tools Integrated
+----------------
+WikipediaQueryRun
+   ~ Fetches factual and updated information from Wikipedia
 
-3. Run application:
-   streamlit run app.py
+LLM Used
+--------
+OpenAI GPT Model (e.g., GPT-3.5 / GPT-4)
 
-## Example Interaction
+Installation & Setup
 
-User: Who is Elon Musk?  
-Bot: (Wikipedia response)
+1)Clone the repository:
+-----------------------
+ git clone https://github.com/AJeevitha-11/Soulpage-genai-assignment-         Jeevitha
+ cd Soulpage-genai-assignment-Jeevitha
+        
+2)Create a virtual environment:
+-------------------------------
+ python -m venv venv
+ venv\Scripts\activate
 
-User: When was he born?  
-Bot: (Context-aware answer)
+3)Install dependencies:
+ pip install -r requirements.txt
 
+4)Run the application:
+ streamlit run app.py
+
+Example Interaction
+-------------------
+User: Who is Elon Musk?
+Bot: (Fetches information using Wikipedia tool)
+
+User: When was he born?
+Bot: (Uses memory to understand "he" refers to Elon Musk and responds correctly)
+
+Live Demo
+---------
+Streamlit Deployment:
+👉 https://soulpage-genai-assignment-jeevitha-kuya24l4pxbvaogwfkta6s.streamlit.app/
+
+Main Libraries Used
+-------------------
+langchain
+openai
+wikipedia
+streamlit
+python-dotenv
+
+This project fulfills the requirements of Task-2 by integrating LangChain tools, conversational memory, and a context-aware chat interface.
