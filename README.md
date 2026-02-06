@@ -51,7 +51,7 @@ LLM Used
 OpenAI GPT Model (e.g., GPT-3.5 / GPT-4)
 
 Installation & Setup
-
+----------------------
 1)Clone the repository:
 -----------------------
 git clone https://github.com/AJeevitha-11/Soulpage-genai-assignment-Jeevitha
