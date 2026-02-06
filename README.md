@@ -62,9 +62,11 @@ git clone https://github.com/AJeevitha-11/Soulpage-genai-assignment-Jeevitha
  venv\Scripts\activate
 
 3)Install dependencies:
+----------------------
  pip install -r requirements.txt
 
 4)Run the application:
+----------------------
  streamlit run app.py
 
 Example Interaction
