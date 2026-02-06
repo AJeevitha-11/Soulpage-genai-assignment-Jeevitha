@@ -92,5 +92,5 @@ streamlit==1.32.2
 wikipedia==1.4.0
 python-dotenv==1.0.1
 huggingface_hub==0.23.0
-
+---------------------
 This project fulfills the requirements of Task-2 by integrating LangChain tools, conversational memory, and a context-aware chat interface.
