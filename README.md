@@ -59,6 +59,7 @@ git clone https://github.com/AJeevitha-11/Soulpage-genai-assignment-Jeevitha
 2)Create a virtual environment:
 -------------------------------
  python -m venv venv
+ 
  venv\Scripts\activate
 
 3)Install dependencies:
