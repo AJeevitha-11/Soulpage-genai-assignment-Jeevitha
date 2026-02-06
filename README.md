@@ -21,17 +21,30 @@ Features
 Architecture
 ------------
 User
-  ↓
+
+↓
+
+
 Streamlit Chat UI
+
   ↓
+
 LangChain Agent (AgentExecutor)
+  
   ↓
+
 ConversationBufferMemory
+
   ↓
+
 Wikipedia Tool
+
   ↓
+
 LLM (OpenAI)
+
   ↓
+
 Final Response to User
 
 Memory Used
